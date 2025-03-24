@@ -4,13 +4,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Amy VR SCENE</title>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
 </head>
 
 <body>
-  Hello world
-  <script src="script.js"></script>
+  <a-scene>
+    <a-sky src="images/background.jpg" alt="my background image"></a-sky>
+    <!-- strt of house -->
+    <a-cylinder id="floor" position="0 0 0" radius="8.5" color="#86BBD8" height="0.5"></a-cylinder>
+    <a-box id="wall1" position=" 0  1.473  4.907" rotation="0  0  0" scale="10  3  0.2 " color="white"></a-box>
+    <a-box id="wall2" position=" 0  1.473  -4.907" rotation="0  0  0" scale="10  3  0.2 " color="white"></a-box>
+    <a-box id="wall3" position="5.049  1.454  -0.008" rotation="0  -90  0" scale="10  3  0.2 " color="white"></a-box>
+    <a-box id="wall4" position="-5.049  1.454  -0.008" rotation="0  -90  0" scale="10  3  0.2 " color="white"></a-box>
+
+    <a-cylinder id="triangle_front" segments-radial="3" position="0  3.874 4.907" rotation="-90  0  0"
+      scale="5.774  0.2  1.8" color="#white"></a-cylinder>
+    <a-cylinder id="triangle_back" segments-radial="3" position="0  3.874 -4.907" rotation="-90  0  0"
+      scale="5.774  0.2  1.8" color="#white"></a-cylinder>
+    <a-box id="roof_right" position="2.580  4.328  0" rotation="28.433  90  0" scale="10.931 0.20  6.110"
+      color="#33658A"></a-box>
+    <a-box id="roof_left" position="-2.580  4.328  -0" rotation="28.433  -90  0" scale="10.931 0.20  6.130"
+      color="#33658A"></a-box>
+    <!-- strt of art -->
+    <a-plane id="art1" src="images/posters.webp" scale="7.224 3.283 0.050" rotation="0 0 0"
+    position="-0.014 1.660 -4.772"></a-plane>
+     <a-plane id="art2" src="images/window 2.jpg" scale="2.748 1.884 0.990" rotation="0 180.000 0" position="-0.007 2.693 4.577"></a-plane>
+    <a-plane id="art3" src="images/art 1.webp" scale="3.187 2.635 0.050" rotation="0 90.000 0" position="-4.873 1.583 2.142"></a-plane>
+    <a-plane id="art4" src="images/art 2.file" scale="2.987 2.544 0.050" rotation="0 90.000 0" position="-4.789 1.618 -1.749"></a-plane>
+  
+  <!--strt of object-->
+    <a-obj-model id="3dModel1" src="images/tinker.obj" mtl="images/obj.mtl" position="0 0.248 -0.277" rotation="-90 180.000 0" scale="0.05 0.05 0.05""></a-obj-model>
+  
+  
+  </a-scene>
+  
+
+
+
 </body>
 
 </html>
